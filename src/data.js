@@ -1,4 +1,4 @@
-export default [
+const  animals= [
     {
       name: 'Lion',
       scientificName: 'Panthero leo',
@@ -18,3 +18,5 @@ export default [
       diet: ['plants'],
     }
 ]
+
+export default animals;
