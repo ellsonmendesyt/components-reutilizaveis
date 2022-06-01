@@ -2,21 +2,22 @@ import React from 'react'
 import AnimalDetails from '../AnimalDetails/AnimalDetails';
 import './Card.css';
 /*
-Problema:
-Estamos puxando a dieta mas ela não está sendo usada
+no cartao vamos usar somente o nome e o tamanho
+o restante vai ser usado no componente AnimalDetails
+{...props}  vai pegar cada par de chave-valor e passar como propriedade
 
 */
-function CardOne({diet, name, size}) {
+function CardTwo({ name, size, ...props}) {
   return (
     <div>
         <h3>{name}</h3>
         <div>{size}kg</div>
-        <AnimalDetails diet={diet} />
+        <AnimalDetails {...props} />
     </div>
   )
 }
 
-export default CardOne
+export default CardTwo
 
 
 

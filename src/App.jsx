@@ -1,4 +1,5 @@
-import CardOne from "./components/CardOne/CardOne";
+
+import CardTwo from "./components/CardTwo/CardTwo";
 import animals from "./data";
 
 
@@ -7,7 +8,7 @@ export default function App(){
   return(
     <div className="wrapper">
           {animals.map(animal =>
-            <CardOne
+            <CardTwo
               diet={animal.diet}
               key={animal.name}
               name={animal.name}
